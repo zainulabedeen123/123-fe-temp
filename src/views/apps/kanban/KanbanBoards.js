@@ -132,7 +132,7 @@ const KanbanBoard = props => {
       <div className='board-wrapper'>
         <div className='d-flex align-items-center justify-content-between'>
           <div className='d-flex align-items-center board-header'>
-            <Input className='board-title' value={title} onChange={e => setTitle(e.target.value)} />
+            <Input className='board-title'  value={title} onChange={e => setTitle(e.target.value)} />
           </div>
           <UncontrolledDropdown className='more-options-dropdown'>
             <DropdownToggle className='btn-icon' color='transparent' size='sm'>

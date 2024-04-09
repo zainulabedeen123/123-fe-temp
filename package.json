@@ -1,5 +1,5 @@
 {
-  "name": "vuexy-react-admin-dashboard",
+  "name": "scapper123",
   "version": "9.0.0",
   "private": true,
   "dependencies": {
@@ -147,6 +147,7 @@
     "eslint-plugin-react": "^7.29.4",
     "prettier": "^2.6.2",
     "sass-loader": "^13.1.0",
+    "tailwindcss": "^1",
     "vite": "^3.2.4"
   },
   "browserslist": [
