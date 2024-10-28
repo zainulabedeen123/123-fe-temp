@@ -1,41 +1,10 @@
 .active {
   background: #424a50;
-  color: white;
-}
-
-.apexcharts-yaxis-texts-g {
-  color: '#a3a3a3' !important
-}
-
-.scrollbar::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-.scrollbar::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.scrollbar::-webkit-scrollbar-thumb {
-  background: gray;
-  border-radius: 6px;
+  color: wh
 }
 
 .scrollbar::-webkit-scrollbar-thumb:hover {
   background: #a9a9a9;
-}
-
-.scrollbar::-webkit-scrollbar-button {
-  display: none;
-}
-.scrollbar::-webkit-scrollbar-corner {
-  background: transparent;
-}
-
-.viewAllBg {
-  background: linear-gradient(to right,
-      #E33556 0%,
-      #E9514B 7%,
       #EC5D47 14%,
       #EF6A43 20%,
       #F37B3E 28%,
