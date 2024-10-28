@@ -1,19 +1,6 @@
 import React, {useState} from 'react';
 import Searchbar from '../components/Searchbar';
-import ProductInfo from '../components/MyProduct/ProductInfo';
-import CompetitorTable from '../components/MyProduct/CompetitorTable';
-import { FaAngleDown } from 'react-icons/fa';
-import MassiveActionSelector from '../components/MyProduct/MassiveActionSelector';
-import ExportSelector from '../components/MyProduct/ExportSelector';
 
-const MyProduct = () => {
-    const [selectedAction, setSelectedAction] = useState('')
-    const [selectedExport, setSelectedExport] = useState('')
-    return (<>
-        <div className="flex flex-col md:flex-row items-center justify-between mb-8">
-            <div className="flex space-x-5 px-2 items-center text-sm text-[#fafafa]">
-                <p>My Product Collection</p>
-            </div>
             <div className="flex items-center  gap-3 mt-4 md:mt-0">
                 <MassiveActionSelector selectedAction={selectedAction} setSelectedAction ={setSelectedAction}  />
                 <ExportSelector selectedExport={selectedExport} setSelectedExport ={setSelectedExport} />
