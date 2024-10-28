@@ -2,44 +2,7 @@ import React, { useState } from 'react';
 import { CiFilter } from 'react-icons/ci';
 import { FaPlus, FaAngleDown } from 'react-icons/fa6';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
-import AddCompetitorModal from '../components/Competitors/AddCompetitorModal';
-import MonitoredUrlsImport from '../components/Competitors/MonitoredUrlsImport';
-import MonitoredUrlsExport from '../components/Competitors/MonitoredUrlsExport';
-
-import FilterSelector from '../components/Competitors/FilterSelector';
-import MassiveActionSelector from '../components/Competitors/MassiveActionSelector';
-import ImportExportSelector from '../components/Competitors/ImportExportSelector';
-import FilterSelector1 from '../components/Competitors/FilterSelector1';
-import MassiveActionSelector2 from '../components/Competitors/MassiveActionSelector2';
-import { Button } from '@nextui-org/react';
-import ColumnsSelector from '../components/Competitors/ColumnsSelector';
-
-const Competitors = () => {
-  const navigate = useNavigate();
-  const location = useLocation();
-  const pathname = location.pathname.split('/')[2];
-
-  const [isAddCompetitorModalOpen, setIsAddCompetitorModalOpen] = useState(false);
-  const [isExportModalOpen, setIsExportModalOpen] = useState(false);
-  const [isImportModalOpen, setIsImportModalOpen] = useState(false);
-
-  const [selectedDomain, setSelectedDomain] = useState("Select an option");
-  const [selectedStatus1, setSelectedStatus2] = useState("Select an option");
-
-  const [selectedSavedFilterSet, setSelectedSavedFilterSet] = useState("Select an option");
-  const [selectedCompetitor, setSelectedCompetitor] = useState("Select an option");
-  const [selectedBrand, setSelectedBrand] = useState("Select an option");
-  const [selectedStock, setSelectedStock] = useState("Select an option");
-  const [selectedStatus, setSelectedStatus] = useState("Select an option");
-  const [selectedDiff, setSelectedDiff] = useState("Select an option");
-
-  const [selectedAction, setSelectedAction] = useState('')
-  const [selectedMassiveAction1, setSelectedMassiveAction1] = useState('')
-  const [selectedMassiveAction2, setSelectedMassiveAction2] = useState('')
-
-  const handleAddCompetitor = () => {
-    setIsAddCompetitorModalOpen(true);
-  };
+import AddCompetitorModal from '../components/Compe
 
   const handleExport = () => {
     setIsExportModalOpen(true);
