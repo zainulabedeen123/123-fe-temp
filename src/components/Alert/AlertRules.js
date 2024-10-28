@@ -35,6 +35,10 @@ const AlertRules = () => {
         });
     };
 
+    const handleEdit = () => {
+        navigate('/alert/pricealert');
+    };
+
     const columns = [
         {
             label: 'Rule Name',
@@ -53,7 +57,7 @@ const AlertRules = () => {
             render: (value) => (
                 <div className="flex items-center gap-2">
                     <div className="h-8 w-8 rounded-full bg-[#a3a3a3] text-center text-white flex items-center justify-center text-sm font-thin">{value}</div>
-                    <span>Show</span>
+                    <span className='cursor-pointer' onClick={() => navigate('/alert/pricealert')}>Show</span>
                 </div>
             )
         },
@@ -84,13 +88,32 @@ const AlertRules = () => {
             )
         },
         {
-            label: '',
+            label: 'Actions',
             field: 'actions',
             sortable: false,
             render: (value, row, index) => (
-                <div className="flex items-center gap-1 w-[42px]">
-                    {rules[index].isActive ? <FiEye style={28} onClick={() => toggleActive(index)} /> : <FiEyeOff style={28} onClick={() => toggleActive(index)} />}
-                    <BsThreeDotsVertical />
+                <div className="flex items-center gap-2 w-[80px]">
+                    {rules[index].isActive ? <FiEye onClick={() => toggleActive(index)} size={18} /> : <FiEyeOff onClick={() => toggleActive(index)} size={18} />}
+                    <Dropdown>
+                        <DropdownTrigger>
+                            <Button 
+                                isIconOnly
+                                variant="light"
+                                className="p-0 text-[#a3a3a3]"
+                            >
+                                <BsThreeDotsVertical size={18} />
+                            </Button>
+                        </DropdownTrigger>
+                        <DropdownMenu 
+                            aria-label="Action menu" 
+                            className="bg-[#1e252b] text-[#8a8b8c]"
+                            style={{ minWidth: '120px' }}
+                        >
+                            <DropdownItem key="edit" onClick={handleEdit}>Edit</DropdownItem>
+                            <DropdownItem key="run">Run</DropdownItem>
+                            <DropdownItem key="delete" className="text-[#8a8b8c]">Delete</DropdownItem>
+                        </DropdownMenu>
+                    </Dropdown>
                 </div>
             )
         }
