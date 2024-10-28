@@ -1,0 +1,24 @@
+.custom-select {
+    background-color: #343E46;
+    color: #a3a3a3;
+    display: flex;
+    max-width: 200px;
+    height: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    flex-shrink: 0;
+    padding: 2px 8px;
+    font-size: 14px;
+    border-radius: 9px;
+    z-index: 10;
+}
+
+.custom-select option {
+    background-color: #1E252B;
+    color: #a3a3a3;
+    padding: 4px 8px;
+    margin-top: 2px;
+    font-size: 14px;
+}

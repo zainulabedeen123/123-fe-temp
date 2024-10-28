@@ -1,15 +1,14 @@
+const {nextui} = require("@nextui-org/react");
+
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  future: {
-    // removeDeprecatedGapUtilities: true,
-    // purgeLayersByDefault: true,
-  },
-  purge: [],
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {},
   },
-  variants: {},
-  plugins: [],
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
-}
+  darkMode: "class",
+  plugins: [nextui()],
+};

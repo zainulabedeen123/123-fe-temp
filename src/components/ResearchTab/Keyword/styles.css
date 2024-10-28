@@ -1,0 +1,40 @@
+.chart-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #BFBFBF;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.percentage {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.data-title {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.data-item {
+    margin-bottom: 20px;
+}
+
+.data-subitem {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    color: #A4A4A4
+}
+
+.icon {
+    font-size: 24px;
+}

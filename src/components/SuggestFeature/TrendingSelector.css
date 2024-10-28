@@ -1,0 +1,13 @@
+.trending-selector [data-slot="listbox"] {
+    display: flex;
+    flex-direction: row;
+    border: #a3a3a3;
+  }
+
+  .trending-selector [data-slot="listbox"] > [data-slot="listbox"] {
+    gap: 0;
+  }
+
+  .trending-selector [data-slot="listbox"] > [data-slot="listbox"] > [data-slot="base"] {
+    border-right: #a3a3a3 1px solid;
+  }
