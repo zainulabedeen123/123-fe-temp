@@ -1,25 +1,6 @@
 import React, { useState } from 'react';
 import { BiPlus, BiUpArrowCircle } from 'react-icons/bi';
-import { CiFilter } from 'react-icons/ci';
-import { FaAngleDown } from 'react-icons/fa6';
-import { FiEye, FiEyeOff } from 'react-icons/fi';
-import { LuDot } from 'react-icons/lu';
-import { VscCloudUpload } from "react-icons/vsc";
-import repriceGray from '../images/Reprice Grey.png';
-import stool from '../images/Rectangle 19.png';
-import CustomTable from '../components/CustomTable';
-import Searchbar from '../components/Searchbar';
-import CatalogExportModal from '../components/Catalogs/CatalogExportModal';
-import AddCompetitorUrlModal from '../components/Catalogs/AddCompetitorUrlModal';
-import ConnectDatafeed from '../components/Catalogs/ConnectDatafeed';
-import FilterSelector from '../components/Catalogs/FilterSelector';
-import { Button } from '@nextui-org/react';
-
-const MyCatalogs = () => {
-    const [products, setProducts] = useState(generateDummyData());
-    const [isExportModalOpen, setIsExportModalOpen] = useState(false);
-    const [isAddModalOpen, setIsAddModalOpen] = useState(false);
-    const [isConnectDatafeedOpen, setIsConnectDatafeedOpen] = useState(false);
+ectDatafeedOpen] = useState(false);
 
     const toggleActive = (index) => {
         setProducts(prevProducts => {
