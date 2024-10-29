@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
- 
+  "dependencies": {
     "react-dom": "^18.2.0",
     "react-icons": "^5.1.0",
     "react-paginate": "^8.2.0",
