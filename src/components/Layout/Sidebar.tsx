@@ -1,37 +1,19 @@
-import React, { Dispatch, SetStateAction } from "react"
-import {
-  LayoutDashboard,
-  Users,
-  Tag,
-  FileText,
-  PlusCircle,
-  Grid2X2,
-  BookMarked,
-  AlertCircle,
-  ArrowDownToLine,
-  Wifi,
-  Package,
-  Settings,
-  CircleDollarSign,
-  HelpCircle,
-  MessageSquarePlus,
-} from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Switch } from "@/components/ui/switch"
-import { ViewType } from "@/components/DashboardPage"
+import React, { Dispatch, SetStateAction } from "react";
+import { LayoutDashboard, Users } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ViewType } from "@/components/DashboardPage";
 
 interface SidebarProps {
-  currentView: ViewType
-  setCurrentView: Dispatch<SetStateAction<ViewType>>
-  sidebarOpen: boolean
-  setSidebarOpen: Dispatch<SetStateAction<boolean>>
+  currentView: ViewType;
+  setCurrentView: Dispatch<SetStateAction<ViewType>>;
+  sidebarOpen: boolean;
+  setSidebarOpen: Dispatch<SetStateAction<boolean>>;
 }
 
 const Sidebar: React.FC<SidebarProps> = ({
   currentView,
   setCurrentView,
   sidebarOpen,
-  setSidebarOpen,
 }) => {
   return (
     <div
@@ -75,7 +57,7 @@ const Sidebar: React.FC<SidebarProps> = ({
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;

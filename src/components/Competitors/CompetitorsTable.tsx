@@ -1,27 +1,27 @@
-import * as React from "react";
-import { Checkbox } from "@/components/ui/checkbox";
+"use client";
+
 import {
   Table,
   TableBody,
-  TableCell,
   TableHead,
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { Button } from "@/components/ui/button";
-import { Tag, Eye } from "lucide-react";
 
 export default function CompetitorsTable() {
   return (
     <Table>
       <TableHeader>
-        <TableRow className="border-gray-800 hover:bg-transparent">
-          <TableHead className="w-12"><Checkbox /></TableHead>
-          {/* Table Headers */}
+        <TableRow className="border-gray-800">
+          <TableHead className="text-gray-400">Competitor domain</TableHead>
+          <TableHead className="text-gray-400">Monitored URLs</TableHead>
+          <TableHead className="text-gray-400">Prod.Matched</TableHead>
+          <TableHead className="text-gray-400">Your Position</TableHead>
+          <TableHead className="text-gray-400">Status</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>
-        {/* Table Body */}
+        {/* Add table body content here */}
       </TableBody>
     </Table>
   );
