@@ -2,14 +2,13 @@
 
 import * as React from "react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { cn } from "@/lib/utils";
-
 import Sidebar from "@/components/Layout/Sidebar";
 import Header from "@/components/Layout/Header";
 import CompetitorsTable from "@/components/Competitors/CompetitorsTable";
 import Top10CompetitorsTable from "@/components/Competitors/Top10CompetitorsTable";
 import CompetitiveProductsTable from "@/components/Competitors/CompetitiveProductsTable";
 import OverpricedProductsTable from "@/components/Competitors/OverpricedProductsTable";
+import { cn } from "@/lib/utils";
 
 // Types for our different views
 export type ViewType = "dashboard" | "competitors" | "competitive" | "overpriced";
@@ -17,7 +16,7 @@ type TableType = "top10" | "competitive" | "overpriced";
 
 export default function DashboardPage() {
   const [currentView, setCurrentView] = React.useState<ViewType>("dashboard");
-  const [currentTable, setCurrentTable] = React.useState<TableType>("top10");
+  const [currentTable] = React.useState<TableType>("top10"); // Removed setCurrentTable as it's not used
   const [sidebarOpen, setSidebarOpen] = React.useState(true);
 
   // Function to render the appropriate table based on current view

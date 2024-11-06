@@ -1,28 +1,20 @@
 import * as React from "react";
-import { Checkbox } from "@/components/ui/checkbox";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
-import { Button } from "@/components/ui/button";
-import { Tag, Eye } from "lucide-react";
+import { Table, TableBody, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
-export default function CompetitorsTable() {
+const Top10CompetitorsTable = () => {
   return (
     <Table>
       <TableHeader>
-        <TableRow className="border-gray-800 hover:bg-transparent">
-          <TableHead className="w-12"><Checkbox /></TableHead>
-          {/* Table Headers */}
+        <TableRow>
+          <TableHead>Competitor</TableHead>
+          <TableHead>Market Share</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>
-        {/* Table Body */}
+        {/* Add your table rows here */}
       </TableBody>
     </Table>
   );
-}
+};
+
+export default Top10CompetitorsTable;
